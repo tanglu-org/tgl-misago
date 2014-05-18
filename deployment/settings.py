@@ -159,7 +159,8 @@ TEMPLATE_DIRS = (
 
 # List of installed themes
 INSTALLED_THEMES = (
-    'cranefly', # Default style always first
+    'tanglufly', # Default style always first
+    'cranefly',
     'admin', # Admin theme always last
 )
 
