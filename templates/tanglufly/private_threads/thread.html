@@ -425,7 +425,7 @@
           <input type="hidden" name="{{ csrf_id }}" value="{{ csrf_token }}">
           <input type="hidden" name="origin" value="thread_form">
           {{ form_theme.field(thread_form.thread_action, attrs={'class': 'span3'}) }}
-          <button type="submit" class="btn btn-danger">{% trans %}Go{% endtrans %}</button>
+          <button type="submit" class="btn btn-info">{% trans %}Go{% endtrans %}</button>
         </form>
         {% endif %}
         {% if posts_form %}
@@ -433,7 +433,7 @@
           <input type="hidden" name="{{ csrf_id }}" value="{{ csrf_token }}">
           <input type="hidden" name="origin" value="posts_form">
           {{ form_theme.field(posts_form.list_action, attrs={'class': 'span3'}) }}
-          <button type="submit" class="btn btn-danger">{% trans %}Go{% endtrans %}</button>
+          <button type="submit" class="btn btn-info">{% trans %}Go{% endtrans %}</button>
         </form>
         {% endif %}
       </div>
