@@ -468,7 +468,7 @@ class User(models.Model):
                 and not '?' in settings.GRAVATAR_DEFAULT):
             gravatar_default = '&d=%s' % settings.GRAVATAR_DEFAULT
 
-        return 'http://www.gravatar.com/avatar/%s?s=%s%s' % (hashlib.md5(self.email.encode('utf-8')).hexdigest(), image_size, gravatar_default)
+        return 'https://www.gravatar.com/avatar/%s?s=%s%s' % (hashlib.md5(self.email.encode('utf-8')).hexdigest(), image_size, gravatar_default)
 
     def get_ranking(self):
         if not self.ranking:
